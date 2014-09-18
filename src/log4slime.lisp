@@ -49,8 +49,8 @@ figure it out
                ((search "DEFUN" repr) 'defun)
                ((search "FUNCTION" repr) 'defun))))))
 
-(defun slime-loc-defun-p (loc) (eq (slime-loc-type loc) 'swank-backend::defun))
-(defun slime-loc-defvar-p (loc) (eq (slime-loc-type loc) 'swank-backend::defvar))
+(defun slime-loc-defun-p (loc) (eq (slime-loc-type loc) 'defun))
+(defun slime-loc-defvar-p (loc) (eq (slime-loc-type loc) 'defvar))
 
 (defun find-best-location-match (categories definitions)
   "User had left-clicked on a log message coming list of CATEGORIES
